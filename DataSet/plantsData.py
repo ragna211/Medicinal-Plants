@@ -5,6 +5,7 @@ plants = []
 fileRead = open('plantNames.csv')
 
 for i in fileRead:
+	i=i.strip()
 	plants.append(i)
 
 response = gid.googleimagesdownload()
